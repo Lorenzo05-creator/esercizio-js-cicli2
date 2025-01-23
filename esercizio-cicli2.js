@@ -1,12 +1,13 @@
-let num = 2;
+let acc = 0;
+let counter = 0;
 
-for (let i = 1; i <= 10; i++) {
-   console.log( num * i);
+for (let i = 1; i <= 20; i++) {
+   if (i % 2 == 0) {
+    console.log(i);
+   }else{
+    acc = acc + i
+    counter ++
+   }
  }
 
-
-    let num2 = 2;  
-    
-for (let i = 1; i <= 10; i++) {
-        let ndispari = ( (num2 * i) + 1);
-      }    
+console.log(`media = ${acc / counter}`);
